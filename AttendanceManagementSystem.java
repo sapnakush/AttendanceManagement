@@ -43,7 +43,7 @@ public class AttendanceManagementSystem {
 		System.out.print("Enter Student's Name: ");
 		String studentName=sc.next();
 		
-		if(studentAttendance.containsKey(studentName)) {
+		if(!studentAttendance.containsKey(studentName)) {
 			studentAttendance.put(studentName, new ArrayList<>());
 		}
 		System.out.print("Is the student present? (y/n): ");
